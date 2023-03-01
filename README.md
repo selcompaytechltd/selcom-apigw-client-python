@@ -1,5 +1,5 @@
  
-# SELCOM API ACCESS CLIENT
+# Selcom API Gateway Client - PYTHON
 
 <p align='center'>
 
