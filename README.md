@@ -32,17 +32,17 @@ client.computeHeader( dictData)
 
 #postFuct takes relative path to base url and dictionary containing data to be submitted 
 #It performs a POST request of the submitted data to the destniation url generatingg the header internally
-#IT returns a String containing the response to the request
+#IT returns a json containing the response to the request
 client.postFunc(path, dictData)
 
 #ggetFuct takestakes relative path to base url and dictionary containing data to be submitted 
 #It performs a GET request adding the query to the  url and generatingg the header internally
-#IT returns a String containing the response to the request
+#IT returns a json containing the response to the request
 client.getFunc(path, dictData)
 
 #deletetFuct takestakes relative path to base url and dictionarycontaining data of wuery 
 #It performs a DELETE request adding the query to the  url and generatingg the header internally
-#IT returns a String containing the response to the request
+#IT returns a json containing the response to the request
 client.deleteFunc(path, dictData)
 ```
 
@@ -67,7 +67,7 @@ orderDict = {
 "order_id":"1218d5Qb",
 "buyer_email": "john@example.com",
 "buyer_name": "John Joh",
-"buyer_phone": "255682555555",
+"buyer_phone": "255082555555",
 "amount":  8000,
 "currency":"TZS",
 "buyer_remarks":"None",

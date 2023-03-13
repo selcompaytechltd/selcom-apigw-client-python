@@ -54,7 +54,7 @@ class Client:
         response=requests.post(url, json=data, headers=headers)
         
 
-        return response.text
+        return response.json()
 
     def getFunc(self,path, dictData):
         authToken, timestamp, digest, signedFields = self.computeHeader(dictData)
@@ -71,7 +71,7 @@ class Client:
         
         response=requests.get(url, params=params, headers=headers)
 
-        return response.text
+        return response.json()
 
     def deleteFunc(self,path, dictData):
         authToken, timestamp, digest, signedFields = self.computeHeader(dictData)
@@ -89,5 +89,5 @@ class Client:
         
         response=requests.delete(url, params=params, headers=headers)
 
-        return response.text
+        return response.json()
 
